@@ -11,7 +11,7 @@ Unlike the standard [Keybow OS] https://shop.pimoroni.com/products/raspberry-pi-
 ## Installation
 1. Build the [Pimoroni](https://learn.pimoroni.com/tutorial/sandyj/assembling-keybow).
 2. Flash [Raspbian OS](https://www.raspberrypi.org/software/) on to an SD card.
-3. On `/boot` or the boot partition, `touch ssh` and add in a [wpa-supplicant](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) file to configure your connection to your wifi connection.
+3. On `/boot` or the boot partition, enable ssh access by creating an empty file called ssh with `touch ssh`.  Add in a [wpa-supplicant](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) file to configure your connection to your wifi connection.
 4. Boot the Raspberry, ssh in using the standard pi account, and secure the password. Apt-get update / upgrade and secure the OS. Install git.
 5. Clone the [Keybow Source Code](https://github.com/pimoroni/keybow-firmware) into the pi home directory (or someowhere safe). Build the source into the static linked binaries as per the instructions.
 6. Configure Raspbian OS to enable the interfaces / interfaces installed by the Keybow Source Code.
@@ -24,3 +24,4 @@ pi@raspberrypi:~ $ sudo echo "libcomposite" | sudo tee -a /etc/modules</code>
 9. Check the `keys.lua` file to make sure it refers to the `layouts/mini_googlemeet.lua`.
 10. Check `layouts/mini_googlemeet.lua` and configure the colours and keys for Mac OS if required.
 11. Reboot the Raspberry. Ssh into it, and cd into `/boot` and run `sudo ./keybow`.
+12. If it works, you can also create a service for the keybow with the file `keybow.service`. Follow [these instructions](https://www.raspberrypi.org/documentation/linux/usage/systemd.md) to setup the service and make it start on boot.

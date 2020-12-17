@@ -1,0 +1,14 @@
+[Unit]
+Description=Keybow Service
+After=network.target
+
+[Service]
+ExecStart=/boot/keybow
+WorkingDirectory=/boot
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

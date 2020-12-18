@@ -8,8 +8,8 @@ Unlike the standard [Keybow OS] https://shop.pimoroni.com/products/raspberry-pi-
 Pak Ming Wan, 2020.
 
 ## Requirements
-1. A Pimoroni Keybow mini. 3 key programmable keyboard kit.
-2. A Raspberry Pi Zero WH with an SD card with sufficient storage space for Raspbian, plus supporting tools.
+1. A [Pimoroni Keybow mini](https://shop.pimoroni.com/products/keybow-mini-3-key-macro-pad-kit?variant=27890392039507). 3 key programmable keyboard kit. I have the clicky key version.
+2. A [Raspberry Pi Zero WH](https://shop.pimoroni.com/products/raspberry-pi-zero-wh-with-pre-soldered-header) with an SD card with sufficient storage space for Raspbian, plus supporting tools (32Gb is perfectly fine, you'll need about 8Gb total).
 3. A computer to run Google Meet (this code will work for Windows or Linux, and with MacOS X with some minor changes)
 
 ## Installation

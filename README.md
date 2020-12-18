@@ -5,7 +5,7 @@ Here is a [sample video](https://photos.app.goo.gl/YcDdtqavQoTa7pj77) of the key
 
 Unlike the standard [Keybow OS] https://shop.pimoroni.com/products/raspberry-pi-zero-wh-with-pre-soldered-header, this guide will also install Keybow onto Raspbian, so you can ssh into the Keybow and also use it remotely.
 
-Author: Pak Ming Wan, 2020.
+Pak Ming Wan, 2020.
 
 ## Requirements
 1. A Pimoroni Keybow mini. 3 key programmable keyboard kit.

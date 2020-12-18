@@ -16,7 +16,7 @@ Pak Ming Wan, 2020.
 1. Build the [Pimoroni Keybow mini](https://learn.pimoroni.com/tutorial/sandyj/assembling-keybow).
 2. Flash [Raspbian OS](https://www.raspberrypi.org/software/) on to an SD card.
 3. As the Raspberry wiill run headless, you'll need to get secure remote access to it via ssh. On `/boot` or the boot partition, enable ssh access by creating an empty file called ssh with `touch ssh`.  Add in a [wpa-supplicant](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) file to configure your connection to your wifi connection.
-4. Boot the Raspberry, ssh in using the standard pi account, and secure the password. Apt-get update / upgrade and secure the OS. Install git.
+4. Boot the Raspberry, ssh in using the standard pi account, and secure the password. Apt-get update `sudo apt-get update`, upgrade `sudo apt-get upgrade` to secure the OS. Install git with `sudo apt-get install git`.
 5. Clone the [Keybow Source Code](https://github.com/pimoroni/keybow-firmware) into the pi home directory (or someowhere safe). Build the source into the static linked binaries as per the instructions.
 6. Configure Raspbian OS to enable the interfaces / interfaces installed by the Keybow Source Code.
 7. Merge the config lines in `merge.config.txt` into the Raspbian `config.txt`

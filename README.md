@@ -3,7 +3,7 @@ This is a [Pimoroni Keybow mini](https://shop.pimoroni.com/products/keybow-mini-
 
 Here is a [sample video](https://photos.app.goo.gl/YcDdtqavQoTa7pj77) of the keybow mini in action.
 
-Unlike the standard [Keybow OS](https://shop.pimoroni.com/products/raspberry-pi-zero-wh-with-pre-soldered-header), this guide will also install Keybow onto a headless deployment of Raspbian, so you can ssh into the Keybow and update it remotely.
+Unlike the standard [Keybow OS](https://shop.pimoroni.com/products/raspberry-pi-zero-wh-with-pre-soldered-header), this guide will install Keybow onto a headless deployment of Raspbian, so you can ssh into the Keybow and update it remotely.
 
 Pak Ming Wan, 2020.
 

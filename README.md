@@ -1,5 +1,5 @@
 # meet-keybow
-This is a [Pimoroni Keybow mini](https://shop.pimoroni.com/products/keybow-mini-3-key-macro-pad-kit?variant=27890390696019)Configuration for Google Meet.  You'll use it to implement physical audio mute, video mute, and fullscreen.
+This is a [Pimoroni Keybow mini](https://shop.pimoroni.com/products/keybow-mini-3-key-macro-pad-kit?variant=27890390696019) Configuration for Google Meet.  You'll use it to implement physical audio mute, video mute, and fullscreen.
 
 Here is a [sample video](https://photos.app.goo.gl/YcDdtqavQoTa7pj77) of the keybow mini in action.
 

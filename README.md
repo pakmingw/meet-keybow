@@ -36,3 +36,5 @@ Unlike the standard [Keybow OS] https://shop.pimoroni.com/products/raspberry-pi-
 <code>pi@raspberrypi:~ $ sudo systemctl stop keybow.service</code>
 
 <code>pi@raspberrypi:~ $ sudo systemctl enable keybow.service</code>
+
+Steps 8 to 12 are documented in `install.sh` if you want to copy and paste from a file rather than from this markdown text.

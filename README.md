@@ -31,8 +31,8 @@ Unlike the standard [Keybow OS] https://shop.pimoroni.com/products/raspberry-pi-
 
 <code>pi@raspberrypi:~ $ sudo cp keybow.service /etc/systemd/system/keybow.service</code>
 
-<code>sudo systemctl start keybow.service</code>
+<code>pi@raspberrypi:~ $ sudo systemctl start keybow.service</code>
 
-<code>sudo systemctl stop keybow.service</code>
+<code>pi@raspberrypi:~ $ sudo systemctl stop keybow.service</code>
 
-<code>sudo systemctl enable keybow.service</code>
+<code>pi@raspberrypi:~ $ sudo systemctl enable keybow.service</code>

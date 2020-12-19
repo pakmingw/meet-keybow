@@ -24,7 +24,7 @@ a = 255;
 # run functions
 
 # standard sinusoidal function, with a base to not fade out
-f = uint8(floor(a/4 * sin(x * 2 * pi / max) + a/4 + a/2));
+f = uint8(floor(a/4 * sin(x * 2 * pi / max) + a));
 
 # check with plot
 # plot(x, f);

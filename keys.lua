@@ -1,5 +1,5 @@
 require "keybow"
-require "layouts/mini_googlemee_png"
+require "layouts/mini_googlemeet_png"
 
 -- Custom layouts (uncomment to enable) --
 

@@ -32,10 +32,13 @@ f = uint8(floor(a/2 * sin(x * 2 * pi / max) + a/2));
 # transpose image to be vertical
 f = f';
 
+# zero matrix
+zeroMatrix = zeros(size(f));
+
 # build image, each column is a key on the keybow
-outputRed = [f f f];
-outputGreen = [f f f];
-outputBlue = [f f f];
+outputRed = [f zeroMatrix zeroMatrix];
+outputGreen = [zeroMatrix f zeroMatrix];
+outputBlue = [zeroMatrix zeroMAtrix f];
 
 # save image
 [test,testmap] = rgb2ind(outputRed,outputGreen,outputBlue);

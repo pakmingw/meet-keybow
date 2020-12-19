@@ -38,8 +38,12 @@ zeroMatrix = zeros(size(f));
 # build image, each column is a key on the keybow
 outputRed = [f zeroMatrix zeroMatrix];
 outputGreen = [zeroMatrix f zeroMatrix];
-outputBlue = [zeroMatrix zeroMAtrix f];
+outputBlue = [zeroMatrix zeroMatrix f];
 
 # save image
-[test,testmap] = rgb2ind(outputRed,outputGreen,outputBlue);
-imwrite(test, testmap,'output.png');
+#[test,testmap] = rgb2ind(outputRed,outputGreen,outputBlue);
+#imwrite(test, testmap,'output.png');
+
+# other try
+test = cat(3, outputRed, outputGreen, outputBlue);
+imwrite(test, 'output.png');

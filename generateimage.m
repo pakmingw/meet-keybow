@@ -23,22 +23,33 @@ a = 255;
 
 # run functions
 
+# offsets to make lights not in sunc
+f1offset = 50;
+f2offset = 100;
+f3offset = 150;
+
 # standard sinusoidal function, with a base to not fade out
-f = uint8(floor(a/3 * sin(x * 2 * pi / max) + (a / 2) + (a / 4)));
+f1 = uint8(floor(a/3 * sin((x - f1offset) * 2 * pi / max) + (a / 2) + (a / 4)));
+f2 = uint8(floor(a/3 * sin((x - f2offset) * 2 * pi / max) + (a / 2) + (a / 4)));
+f3 = uint8(floor(a/3 * sin((x - f3offset) * 2 * pi / max) + (a / 2) + (a / 4)));
 
 # check with plot
 # plot(x, f);
 
 # transpose image to be vertical
-f = f';
+f1 = f1';
+f2 = f2';
+f3 = f3';
+
+# build image
 
 # zero matrix
 zeroMatrix = zeros(size(f));
 
 # build image, each column is a key on the keybow
-outputRed = [f zeroMatrix zeroMatrix];
-outputGreen = [zeroMatrix f zeroMatrix];
-outputBlue = [zeroMatrix zeroMatrix f];
+outputRed = [f1 zeroMatrix zeroMatrix];
+outputGreen = [zeroMatrix f2 zeroMatrix];
+outputBlue = [zeroMatrix zeroMatrix f3];
 
 # save image
 #[test,testmap] = rgb2ind(outputRed,outputGreen,outputBlue);

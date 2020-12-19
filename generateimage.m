@@ -23,7 +23,7 @@ a = 255;
 
 # run functions
 
-# offsets to make lights not in sunc
+# offsets to make lights not in sync
 f1offset = 50;
 f2offset = 100;
 f3offset = 150;
@@ -46,10 +46,26 @@ f3 = f3';
 # zero matrix
 zeroMatrix = zeros(size(f));
 
-# build image, each column is a key on the keybow
-outputRed = [f1 zeroMatrix zeroMatrix];
-outputGreen = [zeroMatrix f2 zeroMatrix];
-outputBlue = [zeroMatrix zeroMatrix f3];
+# color shifter, if you want the colors to move slightly
+rshift = uint8(floor(a/10 * sin((x - f1offset) * 2 * pi / max) + (a / 2)));
+gshift = uint8(floor(a/10 * sin((x - f2offset) * 2 * pi / max) + (a / 2)));
+bshift = uint8(floor(a/10 * sin((x - f3offset) * 2 * pi / max) + (a / 2)));
+
+rshift = rshift';
+gshift = gshift';
+bshift = bshift';
+
+# build image, each column is a key on the keybow, comment out the one you don't want to use
+
+# pure RGB
+#outputRed = [f1 zeroMatrix zeroMatrix];
+#outputGreen = [zeroMatrix f2 zeroMatrix];
+#outputBlue = [zeroMatrix zeroMatrix f3];
+
+# RGB with shift
+outputRed = [f1 gshift bshift];
+outputGreen = [rshift f2 bshift];
+outputBlue = [rshift gshift f3];
 
 # save image
 #[test,testmap] = rgb2ind(outputRed,outputGreen,outputBlue);

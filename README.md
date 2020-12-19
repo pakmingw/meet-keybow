@@ -40,3 +40,6 @@ Pak Ming Wan, 2020.
 <code>pi@raspberrypi:~ $ sudo systemctl enable keybow.service</code>
 
 Steps 8 to 12 are documented in `install.sh` if you want to copy and paste from a file rather than from this markdown text.
+
+## Animated Lights
+I have provide a sample Octave script `generateImage.m` to generate a PNG image to animate the keybow. Alter the algorithms to your own taste. The sample shows RGB, with a slight colour shift.

@@ -47,9 +47,9 @@ f3 = f3';
 zeroMatrix = zeros(size(f));
 
 # color shifter, if you want the colors to move slightly
-rshift = uint8(floor(a/10 * sin((x - f1offset) * 2 * pi / max) + (a / 2)));
-gshift = uint8(floor(a/10 * sin((x - f2offset) * 2 * pi / max) + (a / 2)));
-bshift = uint8(floor(a/10 * sin((x - f3offset) * 2 * pi / max) + (a / 2)));
+rshift = uint8(floor(a/10 * sin((x - f1offset) * 2 * pi / max) ));
+gshift = uint8(floor(a/10 * sin((x - f2offset) * 2 * pi / max) ));
+bshift = uint8(floor(a/10 * sin((x - f3offset) * 2 * pi / max) ));
 
 rshift = rshift';
 gshift = gshift';

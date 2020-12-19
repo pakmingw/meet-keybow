@@ -29,9 +29,15 @@ f2offset = 100;
 f3offset = 150;
 
 # standard sinusoidal function, with a base to not fade out
-f1 = uint8(floor(a/3 * sin((x - f1offset) * 2 * pi / max) + (a / 2) + (a / 4)));
-f2 = uint8(floor(a/3 * sin((x - f2offset) * 2 * pi / max) + (a / 2) + (a / 4)));
-f3 = uint8(floor(a/3 * sin((x - f3offset) * 2 * pi / max) + (a / 2) + (a / 4)));
+# strong light 
+#f1 = uint8(floor(a/4 * sin((x - f1offset) * 2 * pi / max) + (a / 2) + (a / 4)));
+#f2 = uint8(floor(a/4 * sin((x - f2offset) * 2 * pi / max) + (a / 2) + (a / 4)));
+#f3 = uint8(floor(a/4 * sin((x - f3offset) * 2 * pi / max) + (a / 2) + (a / 4)));
+
+# slightly less light
+f1 = uint8(floor(a/4 * sin((x - f1offset) * 2 * pi / max) + (a / 2) ));
+f2 = uint8(floor(a/4 * sin((x - f2offset) * 2 * pi / max) + (a / 2) ));
+f3 = uint8(floor(a/4 * sin((x - f3offset) * 2 * pi / max) + (a / 2) ));
 
 # check with plot
 # plot(x, f);

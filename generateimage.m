@@ -12,7 +12,7 @@
 # cycling frequency is 60Hz
 
 # f = frequency of colour cycling, in Hz
-freq = 0.1;
+freq = 0.05;
 
 # generate x matrix,
 max = 60/freq;

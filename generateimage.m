@@ -12,10 +12,10 @@
 # cycling frequency is 60Hz
 
 # f = frequency of colour cycling, in Hz
-f = 0.25;
+freq = 0.1;
 
 # generate x matrix,
-max = 60/f;
+max = 60/freq;
 x = 0:1:max;
 
 # amplitude, map to max value of pixel
@@ -24,9 +24,9 @@ a = 255;
 # run functions
 
 # offsets to make lights not in sync
-f1offset = 50;
-f2offset = 100;
-f3offset = 150;
+f1offset = 100;
+f2offset = 200;
+f3offset = 300;
 
 # standard sinusoidal function, with a base to not fade out
 # strong light 
